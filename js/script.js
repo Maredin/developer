@@ -35,7 +35,6 @@ let imgSlider = document.querySelectorAll('.slider__slide_img'),
 let step = 0,
     offset = 1;
 
-console.log(imgLink);
 function hide() {
     imgSlider.forEach(i => {
         i.classList.remove('slider__slide_img-active');
@@ -88,3 +87,20 @@ function show(active) {
             show(offset);
         };
     });
+
+
+    // Ссылки на соцсети
+
+let whatsapp = document.querySelector('#whatsapp');
+   
+
+function changeURLWhatsapp() {
+    whatsapp.href="whatsapp://send?phone=79279268009";
+    }
+
+if(window.innerWidth < 1024) {    
+    changeURLWhatsapp();
+}
+
+
+console.log(whatsapp);
