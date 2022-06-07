@@ -89,18 +89,7 @@ function show(active) {
     });
 
 
-    // Ссылки на соцсети
 
-let whatsapp = document.querySelector('#whatsapp');
+
    
 
-function changeURLWhatsapp() {
-    whatsapp.href="whatsapp://send?phone=79279268009";
-    }
-
-if(window.innerWidth < 1024) {    
-    changeURLWhatsapp();
-}
-
-
-console.log(whatsapp);
